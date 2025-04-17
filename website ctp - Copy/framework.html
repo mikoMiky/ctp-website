@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTP Framework - UUM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="#" class="contact-link">
+                        <i data-lucide="mail"></i>
+                        info@uum.edu.my
+                    </a>
+                    <a href="#" class="contact-link">
+                        <i data-lucide="phone"></i>
+                        +604-928 4981
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+        <div class="chat-icon" onclick="toggleChat()">💬</div>
+        
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h3>CTP Assistant</h3>
+                <span class="close-btn" onclick="toggleChat()">×</span>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="bot-message">Welcome! Ask me about:<br>
+                    • Project phases<br>
+                    • Transformation pillars<br>
+                    • Living labs<br>
+                    • How to participate
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your question...">
+                <button onclick="handleUserInput()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Main Navigation -->
+    <header class="main-header">
+        <nav class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <img src="logo_uum.png" 
+                         alt="UUM Logo">
+                </a>
+
+                <div class="nav-links">
+                    <div class="nav-item">
+                        <button class="nav-button">
+                            About <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="index.html#hero">Overview</a>
+                            <a href="index.html#about">Introduction</a>
+                            <a href="index.html#vision">Vision & Mission</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item">
+                        <button class="nav-button">
+                            Initiative <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="projects.html">Projects</a>
+                            <a href="collaboration.html">UUM X E-Idaman</a>
+                            <a href="pillars.html">Transformation Pillars</a>
+                        </div>
+                    </div>
+
+                    <a href="news.html" class="nav-link">News & Events</a>
+                    <a href="framework.html" class="nav-link">Framework</a> 
+
+                    <div class="search-box">
+                        <input type="search" placeholder="Search...">
+                        <button>
+                            <i data-lucide="search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="mobile-menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Framework Section -->
+    <section class="framework-section">
+        <div class="container">
+            <h1 class="framework-title">Changloon Transformation Project Framework</h1>
+            <div class="pdf-container">
+                <iframe src="Framework.pdf" type="application/pdf" width="100%" height="800px"></iframe>
+                <div class="pdf-fallback">
+                    <p>If the PDF is not loading, you can <a href="Framework.pdf" download>download it here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <address>
+                        Centre for Testing, Measurement and Appraisal<br>
+                        Universiti Utara Malaysia<br>
+                        06010 UUM Sintok<br>
+                        Kedah Darul Aman, Malaysia<br>
+                        <br>
+                        Tel: +604-928 4981<br>
+                        Email: cetma@uum.edu.my
+                    </address>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Project</a></li>
+                        <li><a href="collaboration.html">UUM X Idaman</a></li>
+                        <li><a href="pillars.html">Transformation Pillars</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/cetma.uum" class="" target="_blank">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                            <a href="https://www.uum.edu.my/" class="" target="_blank">
+                            <i data-lucide="globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Centre for Testing, Measurement and Appraisal, UUM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Same footer as index.html -->
+
+    <!-- Load Lucide library first -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html> 

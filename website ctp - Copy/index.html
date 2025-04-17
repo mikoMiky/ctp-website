@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTP - UUM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+        <div class="chat-icon" onclick="toggleChat()">💬</div>
+        
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h3>CTP Assistant</h3>
+                <span class="close-btn" onclick="toggleChat()">×</span>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="bot-message">Welcome! Ask me about:<br>
+                    • Project phases<br>
+                    • Transformation pillars<br>
+                    • Living labs<br>
+                    • How to participate
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your question...">
+                <button onclick="handleUserInput()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="#" class="contact-link">
+                        <i data-lucide="mail"></i>
+                        info@uum.edu.my
+                    </a>
+                    <a href="#" class="contact-link">
+                        <i data-lucide="phone"></i>
+                        +604-928 4981
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="main-header">
+        <nav class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <img src="logo_uum.png" 
+                         alt="UUM Logo">
+                </a>
+
+                <div class="nav-links">
+                    <div class="nav-item">
+                        <button class="nav-button">
+                            About <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="index.html#hero">Overview</a>
+                            <a href="index.html#about">Introduction</a>
+                            <a href="index.html#vision">Vision & Mission</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item">
+                        <button class="nav-button">
+                            Initiative <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="projects.html">Projects</a>
+                            <a href="collaboration.html">UUM X E-Idaman</a>
+                            <a href="pillars.html">Transformation Pillars</a>
+                        </div>
+                    </div>
+
+                    <a href="news.html" class="nav-link">News & Events</a>
+                    <a href="framework.html" class="nav-link">Framework</a>
+
+
+                    <div class="search-box">
+                        <input type="search" placeholder="Search...">
+                        <button>
+                            <i data-lucide="search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="mobile-menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>CHANGLOON TRANSFORMATION PROJECT</h1>
+                    <p>Driving innovation and development in the heart of Kedah</p>
+                    <a href="framework.html" class="cta-button">Learn More</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-badge">Introduction</div>
+                    <h2>About Changloon Transformation Project</h2>
+                    <p>Changloon, a town with unique cultural heritage, is at a turning point. The Changloon Transformation Project Framework is an official government initiative that aims to guide the town toward becoming a knowledge society with a forward-thinking mindset.</p>
+                    <p>This strategic framework targets waste management, tourism, knowledge, and social transformation. The goal is to foster a sustainable, informed, and unified community in alignment with national development goals and the Sustainable Development Goals (SDGs).</p>
+                    <a href="framework.html" class="view-framework">View Official Framework <i data-lucide="arrow-right"></i></a>
+                </div>
+                <div class="about-image">
+                    <figure>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31753.018664047837!2d100.41744517431642!3d6.244699900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b5211f7bd6b11%3A0x14f8cb0f35e186c6!2sChanglun%2C%20Kedah!5e0!3m2!1sen!2smy!4v1703728631413!5m2!1sen!2smy" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <figcaption> Map of Changloon Town in Kubang Pasu, Kedah</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+     
+    
+</section>
+
+<!-- Vision & Mission Section -->
+<section class="vision-mission" id="vision">
+    <div class="container">
+        <h2 class="section-title">Vision & Mission</h2>
+        <div class="vision-mission-grid">
+            <div class="vision-mission-card">
+                <div class="icon-label">
+                    <span class="circle">V</span>
+                    <h3>Vision</h3>
+                </div>
+                <p>Transform Changloon into a leading knowledge society, driving innovation, sustainability, and community empowerment through practical solutions and the living lab approach. Align efforts with the Sustainable Development Goals (SDGs) to create a resilient and thriving town.</p>
+            </div>
+
+            <div class="vision-mission-card">
+                <div class="icon-label">
+                    <span class="circle">M</span>
+                    <h3>Mission</h3>
+                </div>
+                <p>To implement effective transformation across waste management, tourism, knowledge, and social sectors through community engagement, education, and sustainable practices. We aim to create a model of development that can be replicated in other communities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ... existing code ... -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <address>
+                        Centre for Testing, Measurement and Appraisal<br>
+                        Universiti Utara Malaysia<br>
+                        06010 UUM Sintok<br>
+                        Kedah Darul Aman, Malaysia<br>
+                        <br>
+                        Tel: +604-928 4981<br>
+                        Email: cetma@uum.edu.my
+                    </address>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Project</a></li>
+                        <li><a href="collaboration.html">UUM X Idaman</a></li>
+                        <li><a href="pillars.html">Transformation Pillars</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/cetma.uum" class="" target="_blank">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="https://www.uum.edu.my/" class="" target="_blank">
+                            <i data-lucide="globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Centre for Testing, Measurement and Appraisal, UUM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load Lucide library first -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Then initialize icons -->
+    <script>
+        // Initialize Lucide icons after the library is loaded
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

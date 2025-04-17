@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTP - UUM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+        <div class="chat-icon" onclick="toggleChat()">💬</div>
+        
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h3>CTP Assistant</h3>
+                <span class="close-btn" onclick="toggleChat()">×</span>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="bot-message">Welcome! Ask me about:<br>
+                    • Project phases<br>
+                    • Transformation pillars<br>
+                    • Living labs<br>
+                    • How to participate
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your question...">
+                <button onclick="handleUserInput()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="#" class="contact-link">
+                        <i data-lucide="mail"></i>
+                        info@uum.edu.my
+                    </a>
+                    <a href="#" class="contact-link">
+                        <i data-lucide="phone"></i>
+                        +604-928 4981
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="main-header">
+        <nav class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <img src="logo_uum.png" 
+                         alt="UUM Logo">
+                </a>
+
+                <div class="nav-links">
+                    <div class="nav-item">
+                        <button class="nav-button">
+                            About <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="index.html#hero">Overview</a>
+                            <a href="index.html#about">Introduction</a>
+                            <a href="index.html#vision">Vision & Mission</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item">
+                        <button class="nav-button">
+                            Initiative <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="projects.html">Projects</a>
+                            <a href="collaboration.html">UUM X E-Idaman</a>
+                            <a href="pillars.html">Transformation Pillars</a>
+                        </div>
+                    </div>
+
+                    <a href="news.html" class="nav-link">News & Events</a>
+                    <a href="framework.html" class="nav-link">Framework</a>
+
+
+                    <div class="search-box">
+                        <input type="search" placeholder="Search...">
+                        <button>
+                            <i data-lucide="search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="mobile-menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- News Hero Section -->
+    <section class="news-hero">
+        <div class="container">
+            <h1>Latest News & Updates</h1>
+            <p>Stay informed about the latest developments and initiatives at UUM</p>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news">
+        <div class="container">
+            <div class="news-filters">
+                <button class="filter-btn active" data-category="all">All News</button>
+                <button class="filter-btn" data-category="campus">Campus News</button>
+                <button class="filter-btn" data-category="lifestyle">Lifestyle</button>
+                <button class="filter-btn" data-category="education">Education</button>
+                <button class="filter-btn" data-category="general">General</button>
+            </div>
+            
+            <div class="news-grid">
+                <!-- News Item 1 -->
+                <div class="news-card" data-category="campus">
+                    <div class="news-img">
+                        <img src="news1.jpg" alt="Five Key Policies">
+                        <span class="news-category">Campus News</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <div><i data-lucide="calendar"></i> March 15, 2024</div>
+                            
+                        </div>
+                        <h3>Five Key Policies Highlighted to Propel University Excellence</h3>
+                        <p>UUM leadership emphasizes strategic policies to enhance academic excellence and institutional development.</p>
+                        <a href="https://uumtoday.com/campus-news/five-key-policies-highlighted-to-propel-university-excellence/" class="read-more" target="_blank">Read More</a>
+                    </div>
+                </div>
+
+                <!-- News Item 2 -->
+                <div class="news-card" data-category="lifestyle">
+                    <div class="news-img">
+                        <img src="news2.jpg" alt="Changlun Transformation">
+                        <span class="news-category">Lifestyle</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <div><i data-lucide="calendar"></i> March 10, 2024</div>
+                            
+                        </div>
+                        <h3>First Steps Towards Changlun Transformation</h3>
+                        <p>New initiatives launched to enhance the quality of life for the Changlun community.</p>
+                        <a href="https://uumtoday.com/lifestyle-news/langkah-pertama-menuju-transformasi-changlun/" class="read-more" target="_blank">Read More</a>
+                    </div>
+                </div>
+
+                <!-- News Item 3 -->
+                <div class="news-card" data-category="campus">
+                    <div class="news-img">
+                        <img src="news3.jpg" alt="Digital Entrepreneurship">
+                        <span class="news-category">Campus News</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <div><i data-lucide="calendar"></i> March 5, 2024</div>
+                            
+                        </div>
+                        <h3>Digital Entrepreneurship Drives Changlun Transformation</h3>
+                        <p>Digital entrepreneurship program launched to boost local economic development.</p>
+                        <a href="https://uumtoday.com/campus-news/keusahawanan-digital-jadi-pemangkin-transformasi-changlun/" class="read-more" target="_blank">Read More</a>
+                    </div>
+                </div>
+
+                <!-- News Item 4 -->
+                <div class="news-card" data-category="education">
+                    <div class="news-img">
+                        <img src="news4.jpg" alt="SOC Industry Visit">
+                        <span class="news-category">Education</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <div><i data-lucide="calendar"></i> February 28, 2024</div>
+                            
+                        </div>
+                        <h3>SOC Industry Visit Strengthens Strategic Partnerships and Supports CTP</h3>
+                        <p>School of Computing strengthens industry collaboration through strategic partnerships.</p>
+                        <a href="https://uumtoday.com/education/lawatan-industri-soc-kukuhkan-hubungan-strategik-dan-sokong-ctp/" class="read-more" target="_blank">Read More</a>
+                    </div>
+                </div>
+
+                <!-- News Item 5 -->
+                <div class="news-card" data-category="general">
+                    <div class="news-img">
+                        <img src="news5.jpg" alt="PEKERTI 2.0">
+                        <span class="news-category">General</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <div><i data-lucide="calendar"></i> February 20, 2024</div>
+                            
+                        </div>
+                        <h3>PEKERTI 2.0 Strengthens Community Relations Through Collaboration and Welfare</h3>
+                        <p>PEKERTI 2.0 program launched to strengthen relationships with local communities.</p>
+                        <a href="https://uumtoday.com/general-news/pekerti-2-0-kukuhkan-hubungan-komuniti-melalui-kerjasama-dan-kebajikan/" class="read-more" target="_blank">Read More</a>
+                    </div>
+                </div>
+
+                <!-- News Item 6 -->
+                <div class="news-card" data-category="lifestyle">
+                    <div class="news-img">
+                        <img src="news6.jpg" alt="Flood Aid">
+                        <span class="news-category">Lifestyle</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <div><i data-lucide="calendar"></i> February 15, 2024</div>
+                            
+                        </div>
+                        <h3>Pekema Foundation and TISSA-UUM Channel Aid to Flood Victims</h3>
+                        <p>Strategic collaboration to assist flood victims in affected areas.</p>
+                        <a href="https://uumtoday.com/lifestyle-news/yayasan-pekema-dan-tissa-uum-salur-bantuan-kepada-mangsa-banjir/" class="read-more" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <address>
+                        Centre for Testing, Measurement and Appraisal<br>
+                        Universiti Utara Malaysia<br>
+                        06010 UUM Sintok<br>
+                        Kedah Darul Aman, Malaysia<br>
+                        <br>
+                        Tel: +604-928 4981<br>
+                        Email: cetma@uum.edu.my
+                    </address>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Project</a></li>
+                        <li><a href="collaboration.html">UUM X Idaman</a></li>
+                        <li><a href="pillars.html">Transformation Pillars</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/cetma.uum" class="" target="_blank">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="https://www.uum.edu.my/" class="" target="_blank">
+                            <i data-lucide="globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Centre for Testing, Measurement and Appraisal, UUM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load Lucide library first -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Then initialize icons -->
+    <script>
+        // Initialize Lucide icons after the library is loaded
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // News filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const newsCards = document.querySelectorAll('.news-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const category = button.dataset.category;
+
+                newsCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

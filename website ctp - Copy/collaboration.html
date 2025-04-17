@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Events - CTP - UUM</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Optionally use an external stylesheet if you have one -->
+</head>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+        <div class="top-bar-content">
+            <div class="contact-info">
+                <a href="#" class="contact-link">
+                    <i data-lucide="mail"></i>
+                    info@uum.edu.my
+                </a>
+                <a href="#" class="contact-link">
+                    <i data-lucide="phone"></i>
+                    +604-928 4981
+                </a>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+<body>
+
+  <header class="main-header">
+    <nav class="container">
+      <div class="nav-content">
+        <a href="index.html" class="logo">
+          <img src="logo_uum.png"UUM Logo">
+        </a>
+        <div class="nav-links">
+          <div class="nav-item">
+            <button class="nav-button">
+              About <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a href="index.html#hero">Overview</a>
+              <a href="index.html#about">Introduction</a>
+              <a href="index.html#vision">Vision & Mission</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <button class="nav-button">
+              Initiative <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a href="projects.html">Projects</a>  
+              <a href="news.html">UUM X E-Idaman</a>
+              <a href="pillars.html">Transformation Pillars</a>
+            </div>
+          </div>
+          <!-- Change News & Events link to indicate active page if desired -->
+          <a href="news.html" class="nav-link">News & Events</a>
+          <a href="framework.html" class="nav-link">Framework</a>
+
+          <div class="search-box">
+            <input type="search" placeholder="Search...">
+            <button>
+              <i data-lucide="search"></i>
+            </button>
+          </div>
+        </div>
+        <button class="mobile-menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Chatbot Container -->
+  <div class="chatbot-container">
+    <div class="chat-icon" onclick="toggleChat()">💬</div>
+    
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <h3>CTP Assistant</h3>
+            <span class="close-btn" onclick="toggleChat()">×</span>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="bot-message">Welcome! Ask me about:<br>
+                • Project phases<br>
+                • Transformation pillars<br>
+                • Living labs<br>
+                • How to participate
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your question...">
+            <button onclick="handleUserInput()">Send</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+  <!-- Collaboration Section -->
+  <section class="collaboration-section">
+    <div class="section-header">
+      <div class="container">
+        <h1>UUM X E-Idaman Collaboration</h1>
+        <p class="section-description">Strategic partnership driving sustainable transformation in Changlun through innovation and community engagement</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="collaboration-grid">
+        <!-- Collaboration Item 1 -->
+        <div class="collab-card">
+          <div class="collab-img">
+            <img src="ctp_project.jpg" alt="E-Idaman Sustainability Initiative">
+            <span class="collab-category">Strategic Partnership</span>
+          </div>
+          <div class="collab-content">
+            <div class="collab-meta">
+              <div><i data-lucide="calendar"></i> January 12, 2025</div>
+              <div><i data-lucide="tag"></i> Community Development</div>
+            </div>
+            <h3>E-Idaman Partners with UUM for Smart Waste Management Solution</h3>
+            <p>E-Idaman Sdn Bhd was appointed as a strategic partner to Universiti Utara Malaysia (UUM) in the Changloon Transformation Project (CTP). This joint initiative focuses on waste, knowledge, tourism, and social transformation, aiming to drive meaningful progress in Changlun through multi-stakeholder collaboration.</p>
+            <div class="collab-footer">
+              <a href="https://e-idaman.com/media/news/407" class="read-more" target="_blank" rel="noopener noreferrer">
+                Read More <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collaboration Item 2 -->
+        <div class="collab-card">
+          <div class="collab-img">
+            <img src="collab.jpg" alt="Festival Lestari 2024">
+            <span class="collab-category">Sustainability</span>
+          </div>
+          <div class="collab-content">
+            <div class="collab-meta">
+              <div><i data-lucide="calendar"></i> December 18, 2024</div>
+              <div><i data-lucide="tag"></i> Education</div>
+            </div>
+            <h3>Festival Lestari 2024: A Joint Initiative by E-Idaman and UUM</h3>
+            <p>E-Idaman Sdn Bhd (EISB), in collaboration with Universiti Utara Malaysia (UUM), organized Festival Lestari 2024. The event featured a Sustainability and Integrity Forum, exhibitions by various agencies, and creative competitions including short videos, documentaries, and PSAs open to all universities in Malaysia.</p>
+            <div class="collab-footer">
+              <a href="https://e-idaman.com/media/news/230" class="read-more" target="_blank" rel="noopener noreferrer">
+                Read More <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collaboration Item 3 -->
+        <div class="collab-card">
+          <div class="collab-img">
+            <img src="drivethrough.jpg" alt="Drive-Thru Recycle Centre">
+            <span class="collab-category">Innovation</span>
+          </div>
+          <div class="collab-content">
+            <div class="collab-meta">
+              <div><i data-lucide="calendar"></i> October 21, 2024</div>
+              <div><i data-lucide="tag"></i> Technology</div>
+            </div>
+            <h3>UUM Launches First Drive-Thru Recycling Centre in Malaysia</h3>
+            <p>UUM became the first university in Malaysia to launch a Drive-Thru Recycle Centre (DTRC), encouraging campus recycling through rewards via IdamanXchange apps like Boost and Touch 'n Go.</p>
+            <div class="collab-footer">
+              <a href="https://www.uum.edu.my/news-highlights/uum-becomes-first-university-to-launch-drive-through-recycling-centre" class="read-more" target="_blank" rel="noopener noreferrer">
+                Read More <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collaboration Item 4 -->
+        <div class="collab-card">
+          <div class="collab-img">
+            <img src="stem.jpg" alt="STML Green Carnival">
+            <span class="collab-category">Education</span>
+          </div>
+          <div class="collab-content">
+            <div class="collab-meta">
+              <div><i data-lucide="calendar"></i> July 3, 2024</div>
+              <div><i data-lucide="tag"></i> Student Engagement</div>
+            </div>
+            <h3>STML Green Carnival UUM 2024</h3>
+            <p>E-Idaman Sdn Bhd was invited to the STML Green Carnival at UUM, an event organized by the School of Technology Management and Logistic, promoting sustainability awareness among students.</p>
+            <div class="collab-footer">
+              <a href="https://e-idaman.com/media/news/230" class="read-more" target="_blank" rel="noopener noreferrer">
+                Read More <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collaboration Item 5 -->
+        <div class="collab-card">
+          <div class="collab-img">
+            <img src="penggerak.jpg" alt="Community Collaboration">
+            <span class="collab-category">Community</span>
+          </div>
+          <div class="collab-content">
+            <div class="collab-meta">
+              <div><i data-lucide="calendar"></i> January 7, 2024</div>
+              <div><i data-lucide="tag"></i> Social Impact</div>
+            </div>
+            <h3>Community Collaboration Mobilisation Programme – FELDA Laka Selatan</h3>
+            <p>E-Idaman Sdn Bhd (EISB) joined UUM's Centre for Foundation Studies in Management for the Community Collaboration Mobilisation Programme at FELDA Laka Selatan, strengthening community ties and promoting recycling awareness.</p>
+            <div class="collab-footer">
+              <a href="https://e-idaman.com/media/news/401" class="read-more" target="_blank" rel="noopener noreferrer">
+                Read More <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collaboration Item 6 -->
+        <div class="collab-card">
+          <div class="collab-img">
+            <img src="265kg.jpg" alt="CSR Programme">
+            <span class="collab-category">CSR</span>
+          </div>
+          <div class="collab-content">
+            <div class="collab-meta">
+              <div><i data-lucide="calendar"></i> July 4, 2023</div>
+              <div><i data-lucide="tag"></i> Environmental Impact</div>
+            </div>
+            <h3>264.55 KG of Recyclables Collected in UUM CSR Programme</h3>
+            <p>E-Idaman Sdn Bhd (EISB) participated in the UUM Social Responsibility Programme at Kampung KEDA Bendang Man, Sik, collecting 264.55 kg of recyclables and promoting environmental awareness.</p>
+            <div class="collab-footer">
+              <a href="https://e-idaman.com/media/news/231" class="read-more" target="_blank" rel="noopener noreferrer">
+                Read More <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Modal -->
+  <div id="newsModal" class="news-modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeNewsModal()">&times;</span>
+      <div class="modal-header">
+        <h2 id="modalTitle"></h2>
+      </div>
+      <div class="modal-body">
+        <div id="modalContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openNewsModal(newsId) {
+      const modal = document.getElementById('newsModal');
+      modal.style.display = 'block';
+      // Add your modal content logic here
+    }
+
+    function closeNewsModal() {
+      const modal = document.getElementById('newsModal');
+      modal.style.display = 'none';
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      const modal = document.getElementById('newsModal');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
+
+  <!-- Include your footer (again, you can copy this section from index.html) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <address>
+            Centre for Testing, Measurement and Appraisal<br>
+            Universiti Utara Malaysia<br>
+            06010 UUM Sintok<br>
+            Kedah Darul Aman, Malaysia<br>
+            <br>
+            Tel: +604-928 4981<br>
+            Email: cetma@uum.edu.my
+          </address>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Project</a></li>
+            <li><a href="collaboration.html">UUM X Idaman</a></li>
+            <li><a href="pillars.html">Transformation Pillars</a></li>
+            <li><a href="news.html">News & Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/cetma.uum" class="" target="_blank">
+              <i data-lucide="facebook"></i>
+            </a>
+            <a href="https://www.uum.edu.my/" class="" target="_blank">
+              <i data-lucide="globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Centre for Testing, Measurement and Appraisal, UUM. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Load Lucide library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+    document.querySelector('.mobile-menu').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
